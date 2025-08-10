@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QR Code Generator — secaion</title>
+  <meta name="description" content="Create beautiful, customizable QR codes in your browser. Works offline. Wi‑Fi, Email, colors, logo overlay, PNG/SVG export, history.">
+  <meta property="og:title" content="QR Code Generator — secaion">
+  <meta property="og:description" content="Create beautiful, customizable QR codes in your browser. Works offline.">
+  <meta property="og:type" content="product">
+  <meta property="og:image" content="https://raw.githubusercontent.com/secaion/secaion.github.io/main/assets/og-qr.jpg">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <style>
+    .screens{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));margin-top:14px}
+    .install{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;border:1px solid var(--border);background:rgba(255,255,255,.04);color:var(--muted);font-size:12px;font-weight:700}
+    .faq dt{font-weight:800;margin-top:12px}
+    .faq dd{margin:6px 0 0 0;color:var(--muted)}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"SoftwareApplication",
+    "name":"QR Code Generator — Chrome Extension",
+    "applicationCategory":"BrowserExtension",
+    "operatingSystem":"Chrome OS, macOS, Windows, Linux",
+    "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},
+    "publisher":{"@type":"Organization","name":"secaion"}
+  }
+  </script>
+</head>
+<body>
+  <header class="nav">
+    <div class="brand">
+      <div class="logo"></div>
+      <h1>secaion</h1>
+    </div>
+    <nav>
+      <a class="btn" href="/">Home</a>
+      <a class="btn" href="https://github.com/secaion" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero" style="padding-top:34px">
+      <span class="kicker">Chrome Extension</span>
+      <h2>QR Code Generator</h2>
+      <p class="sub">Beautiful. Powerful. Fast. Generate QR codes for links, text, Wi‑Fi networks, or emails — fully offline with advanced customization and history.</p>
+      <div class="install">
+        <a class="btn-primary" href="https://chromewebstore.google.com/detail/qr-code-generator/XXXXX" target="_blank" rel="noopener">Install on Chrome</a>
+        <a class="btn-ghost" href="https://youtu.be/VIDEO_ID" target="_blank" rel="noopener">Watch demo</a>
+        <a class="btn-ghost" href="https://buymeacoffee.com/secaion" target="_blank" rel="noopener">Support</a>
+      </div>
+      <div class="features">
+        <div class="feat"><strong>Offline</strong><br><span class="note">No tracking, no data sent anywhere.</span></div>
+        <div class="feat"><strong>Customizable</strong><br><span class="note">Colors, size (128–1024), error correction, logo overlay.</span></div>
+        <div class="feat"><strong>Multiple formats</strong><br><span class="note">Export as PNG or SVG at 256, 512, 1024 px.</span></div>
+        <div class="feat"><strong>Smart types</strong><br><span class="note">Wi‑Fi, Email, plain text, URLs.</span></div>
+        <div class="feat"><strong>History</strong><br><span class="note">Reuse your last 50 QR codes.</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h3>Screenshots</h3>
+      <div class="screens">
+        <img class="responsive" src="/assets/screens/initial.jpg" alt="Popup basic tab">
+        <img class="responsive" src="/assets/screens/url.jpg" alt="Entering a URL">
+        <img class="responsive" src="/assets/screens/generate.jpg" alt="Generate QR">
+        <img class="responsive" src="/assets/screens/download.jpg" alt="Download options">
+        <img class="responsive" src="/assets/screens/wifi.jpg" alt="Wi‑Fi QR">
+        <img class="responsive" src="/assets/screens/email.jpg" alt="Email QR">
+        <img class="responsive" src="/assets/screens/history.jpg" alt="History view">
+      </div>
+      <p class="note">Tip: replace these images with your final Chrome Web Store screenshots (1280×800). Keep file names the same for easy drop‑in.</p>
+    </section>
+
+    <section class="section">
+      <h3>FAQ</h3>
+      <dl class="faq">
+        <dt>Does it work offline?</dt>
+        <dd>Yes. All QR generation happens locally in your browser.</dd>
+        <dt>What permissions are required?</dt>
+        <dd>Only <code>activeTab</code> (when you use the “Use Current Tab” button) and <code>storage</code> for history.</dd>
+        <dt>Where can I report an issue?</dt>
+        <dd>Open an issue on our <a href="https://github.com/secaion" target="_blank" rel="noopener">GitHub</a> or email <a href="mailto:support@secaion.com">support@secaion.com</a>.</dd>
+      </dl>
+    </section>
+
+    <section class="section">
+      <h3>Privacy</h3>
+      <p class="note">We don’t collect or transmit any personal data. See the in‑extension “Support” link for donations.</p>
+    </section>
+  </main>
+
+  <footer class="footer">© <span id="y"></span> secaion • Privacy‑first utilities</footer>
+  <script>document.getElementById('y').textContent=(new Date).getFullYear()</script>
+</body>
+</html>
