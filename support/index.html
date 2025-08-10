@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support — QR Code Generator by secaion</title>
+  <meta name="description" content="Help, troubleshooting, FAQs, and contact options for the QR Code Generator Chrome extension by secaion.">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <style>
+    .toc a{display:inline-block;margin:4px 8px 0 0}
+    .kbd{padding:2px 6px;border:1px solid var(--border);border-radius:6px;background:rgba(255,255,255,.04)}
+    .callout{background:rgba(102,126,234,.08);border:1px solid var(--border);border-radius:12px;padding:14px}
+    code{background:rgba(255,255,255,.06);padding:2px 6px;border-radius:6px;border:1px solid var(--border)}
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="brand">
+      <div class="logo"></div>
+      <h1>secaion</h1>
+    </div>
+    <nav>
+      <a class="btn" href="/">Home</a>
+      <a class="btn" href="/qr/">QR Code Generator</a>
+      <a class="btn" href="/support/">Support</a>
+      <a class="btn" href="https://github.com/secaion" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero" style="padding-top:34px">
+      <span class="kicker">Support</span>
+      <h2>QR Code Generator — Help & Troubleshooting</h2>
+      <p class="sub">Quick fixes, FAQs, and ways to contact us. We aim to keep things private, fast, and frustration‑free.</p>
+      <div class="cta">
+        <a class="btn-primary" href="https://chromewebstore.google.com/detail/qr-code-generator/XXXXX" target="_blank" rel="noopener">Install / Update</a>
+        <a class="btn-ghost" href="mailto:support@secaion.com?subject=QR%20Code%20Generator%20Support">Email support</a>
+        <a class="btn-ghost" href="https://buymeacoffee.com/secaion" target="_blank" rel="noopener">Buy us a coffee</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h3>Table of contents</h3>
+      <p class="toc">
+        <a href="#quick-fixes" class="pill">Quick fixes</a>
+        <a href="#faq" class="pill">FAQs</a>
+        <a href="#report" class="pill">Report a bug</a>
+        <a href="#privacy" class="pill">Privacy</a>
+        <a href="#changelog" class="pill">Changelog</a>
+      </p>
+    </section>
+
+    <section id="quick-fixes" class="section">
+      <h3>Quick fixes</h3>
+      <div class="grid">
+        <div class="feat">
+          <strong>“Use Current Tab” doesn’t work</strong>
+          <p class="note">Click the <em>Use Current Tab</em> button when the page you want is active. The extension only requests <code>activeTab</code> permission when you click it. If the page is a special Chrome page (e.g., <code>chrome://</code>) or a restricted store page, Chrome won’t share the URL.</p>
+        </div>
+        <div class="feat">
+          <strong>Icon not showing in the toolbar</strong>
+          <p class="note">Pin the extension: click the puzzle icon in Chrome’s toolbar → pin <em>QR Code Generator</em>. If you still see a generic icon, make sure the icons exist at <code>icons/icon16.png</code>, <code>icon32.png</code>, <code>icon48.png</code>, <code>icon128.png</code> and reload via <code>chrome://extensions</code> → <span class="kbd">Reload</span>.</p>
+        </div>
+        <div class="feat">
+          <strong>Logo overlay looks blurry</strong>
+          <p class="note">Use a square, high‑resolution logo (e.g., 512×512). Try a higher QR size (e.g., 512 or 1024) and export PNG. Keep overlay between 15–25% for best scanability.</p>
+        </div>
+        <div class="feat">
+          <strong>QR not scanning</strong>
+          <p class="note">Increase error correction to <strong>Q</strong> or <strong>H</strong>, avoid very light foreground colors, and keep strong contrast between dark/light colors. Very long text may require a larger size.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <h3>Frequently asked questions</h3>
+      <dl class="faq">
+        <dt>Does it work offline?</dt>
+        <dd>Yes. Everything runs locally in your browser. No data leaves your device.</dd>
+        <dt>What types of QR can I make?</dt>
+        <dd>Plain text, URLs, Wi‑Fi (SSID/password), and email <code>mailto:</code> (To/Subject/Body).</dd>
+        <dt>How do I export?</dt>
+        <dd>Use the <em>Download PNG</em> or <em>Download SVG</em> buttons. You can also choose 256, 512, or 1024 export size.</dd>
+        <dt>Where is my history stored?</dt>
+        <dd>Locally in Chrome’s <code>storage</code> for the extension. Clear it from the History tab.</dd>
+        <dt>Can I use it in Incognito?</dt>
+        <dd>Yes—enable “Allow in incognito” on <code>chrome://extensions</code> for the extension.</dd>
+      </dl>
+    </section>
+
+    <section id="report" class="section">
+      <h3>Report a bug</h3>
+      <div class="callout">
+        <p class="note"><strong>Helpful details to include:</strong></p>
+        <ul class="list">
+          <li>Steps to reproduce</li>
+          <li>What you expected vs. what happened</li>
+          <li>Chrome version and OS (e.g., macOS 14, Windows 11)</li>
+          <li>Screenshot of the popup (if possible)</li>
+          <li>Errors from <code>chrome://extensions</code> → <em>QR Code Generator</em> → <strong>Errors</strong></li>
+        </ul>
+        <p class="note">Email <a href="mailto:support@secaion.com?subject=Bug%20report%20—%20QR%20Code%20Generator">support@secaion.com</a> or open an issue on <a href="https://github.com/secaion" target="_blank" rel="noopener">GitHub</a>.</p>
+      </div>
+    </section>
+
+    <section id="privacy" class="section">
+      <h3>Privacy</h3>
+      <p class="note">We don’t collect analytics or personal data. All QR generation is performed locally. The extension requests <code>activeTab</code> only when you click “Use Current Tab,” and uses <code>storage</code> to save your local history.</p>
+    </section>
+
+    <section id="changelog" class="section">
+      <h3>Changelog</h3>
+      <ul class="list">
+        <li><strong>v1.0.0</strong> — Initial public release.</li>
+      </ul>
+      <p class="note">Looking for a feature? <a href="mailto:support@secaion.com?subject=Feature%20request%20—%20QR%20Code%20Generator">Send a request</a>.</p>
+    </section>
+  </main>
+
+  <footer class="footer">© <span id="y"></span> secaion • Need help? <a href="mailto:support@secaion.com">support@secaion.com</a></footer>
+  <script>document.getElementById('y').textContent=(new Date).getFullYear()</script>
+</body>
+</html>
