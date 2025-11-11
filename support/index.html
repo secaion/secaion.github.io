@@ -1,11 +1,19 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Support — by secaion</title>
   <meta name="description" content="Help, troubleshooting, FAQs, and contact options for the products and services by secaion.">
+  <meta property="og:title" content="Support | Secaion">
+  <meta property="og:description" content="Get help and support for Secaion products and services.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://secaion.com/assets/og-image.png">
+  <meta property="og:url" content="https://secaion.com/support/">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico">
   <link rel="stylesheet" href="/assets/css/styles.css">
+  <script src="/assets/js/theme-toggle.js"></script>
   <style>
     .faq dt{font-weight:800;margin-top:12px}
     .faq dd{margin:6px 0 0 0;color:var(--muted)}
@@ -25,7 +33,11 @@
     </div>
     <nav>
       <a class="btn" href="/">Home</a>
-      <a class="btn" href="/qr/">QR Code Generator</a>
+      <a class="btn" href="/services/">Services</a>
+      <a class="btn" href="/contact/">Contact</a>
+      <button class="theme-toggle" aria-label="Toggle theme">
+        <span class="theme-icon">☀️</span>
+      </button>
     </nav>
   </header>
 
@@ -87,8 +99,8 @@
     </section>
   </main>
 
-    <footer class="footer">
-    © <span id="y"></span> Secaion • Built with ❤️ and trust
+  <footer class="footer">
+    © <span id="y"></span> Secaion • Delivering secure, scalable solutions • <a href="tel:+12023843080" style="color:inherit;text-decoration:none;">+1 (202) 384-3080</a> • <a href="mailto:info@secaion.com" style="color:inherit;text-decoration:none;">info@secaion.com</a>
   </footer>
   <script>document.getElementById('y').textContent=(new Date).getFullYear()</script>
 </body>
