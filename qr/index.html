@@ -42,8 +42,8 @@
     <nav>
       <a class="btn" href="/">Home</a>
       <!-- <a class="btn" href="https://github.com/secaion" target="_blank" rel="noopener">GitHub</a> -->
-      <a class="btn" href="/support/">Support</a>
-      <!-- <a class="btn" href="/privacy/">Privacy</a> -->
+      <a class="btn" href="/qr/support/">QR Support</a>
+      <a class="btn" href="/qr/privacy/">Privacy</a>
     </nav>
   </header>
 
@@ -83,8 +83,30 @@
     <section class="section">
       <h3>FAQ</h3>
       <dl class="faq">
+        <dt>How do I install the extension?</dt>
+        <dd>Visit the <a href="https://chromewebstore.google.com/detail/qr-code-generator/fpblcapfkfdepbhjbkpgmmpkeglhgbdj" target="_blank">Chrome Web Store page</a> and click <strong>Add to Chrome</strong>.</dd>
+
         <dt>Does it work offline?</dt>
-        <dd>Yes. All QR generation happens locally in your browser.</dd>
+        <dd>Yes. Everything runs locally in your browser. No data leaves your device.</dd>
+
+        <dt>What types of QR can I make?</dt>
+        <dd>Plain text, URLs, Wi‑Fi (SSID/password), and email <code>mailto:</code> (To/Subject/Body).</dd>
+        
+        <dt>How do I export?</dt>
+        <dd>Use the <em>Download PNG</em> or <em>Download SVG</em> buttons. You can also choose 256, 512, or 1024 export size.</dd>
+
+        <dt>How can I generate a Wi‑Fi QR code?</dt>
+        <dd>Open the extension, go to the <em>Wi‑Fi</em> tab, enter your SSID, password, and security type, then click <em>Generate</em>.</dd>
+
+        <dt>Can I add my own logo to the QR code?</dt>
+        <dd>Yes. In the <em>Basic</em> tab, upload your logo in the <em>Logo Overlay</em> field and adjust the size slider.</dd>
+
+        <dt>Where is my history stored?</dt>
+        <dd>Locally in Chrome’s <code>storage</code> for the extension. Clear it from the History tab.</dd>
+
+        <dt>Can I use it in Incognito?</dt>
+        <dd>Yes—enable “Allow in incognito” on <code>chrome://extensions</code> for the extension.</dd>
+
         <dt>What permissions are required?</dt>
         <dd>Only <code>activeTab</code> (when you use the “Use Current Tab” button) and <code>storage</code> for history.</dd>
         <dt>Where can I report an issue?</dt>
