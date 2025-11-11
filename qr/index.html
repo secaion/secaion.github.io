@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,8 +8,12 @@
   <meta property="og:title" content="QR Code Generator — Secaion">
   <meta property="og:description" content="Create beautiful, customizable QR codes in your browser. Works offline.">
   <meta property="og:type" content="product">
-  <meta property="og:image" content="https://raw.githubusercontent.com/secaion/secaion.github.io/main/assets/og-qr.jpg">
+  <meta property="og:image" content="https://secaion.com/assets/og-image.png">
+  <meta property="og:url" content="https://secaion.com/qr/">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico">
   <link rel="stylesheet" href="/assets/css/styles.css">
+  <script src="/assets/js/theme-toggle.js"></script>
   <style>
     .screens{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));margin-top:14px}
     .install{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
@@ -41,9 +45,12 @@
     </div>
     <nav>
       <a class="btn" href="/">Home</a>
-      <!-- <a class="btn" href="https://github.com/secaion" target="_blank" rel="noopener">GitHub</a> -->
+      <a class="btn" href="/services/">Services</a>
       <a class="btn" href="/qr/support/">QR Support</a>
-      <a class="btn" href="/qr/privacy/">Privacy</a>
+      <a class="btn" href="/qr/privacy/">QR Privacy</a>
+      <button class="theme-toggle" aria-label="Toggle theme">
+        <span class="theme-icon">☀️</span>
+      </button>
     </nav>
   </header>
 
@@ -121,8 +128,8 @@
     </section>
   </main>
 
-    <footer class="footer">
-    © <span id="y"></span> Secaion • Built with ❤️ and trust
+  <footer class="footer">
+    © <span id="y"></span> Secaion • Delivering secure, scalable solutions • <a href="tel:+12023843080" style="color:inherit;text-decoration:none;">+1 (202) 384-3080</a> • <a href="mailto:info@secaion.com" style="color:inherit;text-decoration:none;">info@secaion.com</a>
   </footer>
   <script>document.getElementById('y').textContent=(new Date).getFullYear()</script>
 </body>
