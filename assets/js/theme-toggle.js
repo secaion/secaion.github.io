@@ -48,9 +48,11 @@
     if (theme === THEME_LIGHT) {
       icon.textContent = '🌙';
       toggleBtn.setAttribute('aria-label', 'Switch to dark mode');
+      toggleBtn.setAttribute('data-tooltip', 'Dark Mode');
     } else {
       icon.textContent = '☀️';
       toggleBtn.setAttribute('aria-label', 'Switch to light mode');
+      toggleBtn.setAttribute('data-tooltip', 'Light Mode');
     }
   }
 
@@ -87,6 +89,36 @@
     if (toggleBtn) {
       toggleBtn.addEventListener('click', toggleTheme);
       updateToggleButton(document.documentElement.getAttribute('data-theme'));
+    }
+    
+    // Setup mobile menu
+    setupMobileMenu();
+  }
+
+  /**
+   * Setup mobile menu toggle functionality
+   */
+  function setupMobileMenu() {
+    const mobileToggle = document.querySelector('.mobile-menu-toggle');
+    const nav = document.querySelector('.nav nav');
+    
+    if (mobileToggle && nav) {
+      mobileToggle.addEventListener('click', () => {
+        nav.classList.toggle('active');
+        const isActive = nav.classList.contains('active');
+        mobileToggle.textContent = isActive ? '✕' : '☰';
+        mobileToggle.setAttribute('aria-label', isActive ? 'Close menu' : 'Open menu');
+      });
+      
+      // Close menu when clicking a link
+      const navLinks = nav.querySelectorAll('a');
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          nav.classList.remove('active');
+          mobileToggle.textContent = '☰';
+          mobileToggle.setAttribute('aria-label', 'Open menu');
+        });
+      });
     }
   }
 
